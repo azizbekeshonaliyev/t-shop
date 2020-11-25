@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
-use App\Shop\Admins\Requests\LoginRequest;
+use App\Shop\Employees\Requests\LoginRequest;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Support\Facades\Auth;
 
@@ -43,12 +43,7 @@ class CartLoginController extends Controller
         return view('front.carts.login');
     }
 
-    /**
-     * Login the customer
-     *
-     * @param LoginRequest $request
-     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Http\Response
-     */
+
     public function login(LoginRequest $request)
     {
         $this->validateLogin($request);

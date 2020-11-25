@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Auth;
 
-use App\Shop\Admins\Requests\LoginRequest;
+use App\Shop\Employees\Requests\LoginRequest;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 
@@ -42,14 +42,7 @@ class LoginController extends Controller
         return view('auth.login');
     }
 
-    /**
-     * Login the admin
-     *
-     * @param LoginRequest $request
-     *
-     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Http\Response
-     * @throws \Illuminate\Validation\ValidationException
-     */
+
     public function login(LoginRequest $request)
     {
         $this->validateLogin($request);
