@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Categories;
+namespace App\Http\Controllers\Admin\Categories;
 
 use App\Http\Controllers\Admin\Categories\Requests\{UpdateCategoryRequest,CreateCategoryRequest};
 use App\Shop\Categories\Repositories\CategoryRepository;
